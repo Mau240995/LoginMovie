@@ -9,13 +9,20 @@ import UIKit
 
 class MoviesCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imgMovie: UIImageView!
-    
-    @IBOutlet weak var lblName: UILabel!
-    
+    @IBOutlet weak var lblDescrition: UILabel!
+    @IBOutlet weak var lblQuatification: UILabel!
     @IBOutlet weak var lblDate: UILabel!
     
-    @IBOutlet weak var lblQualification: UILabel!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var image: UIImageView!
     
-    @IBOutlet weak var lblDescription: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    func onBind(data: Result)  {
+        lblName.text = data.title
+        lblDate.text = data.releaseDate
+        lblQuatification.text = String(data.voteCount)
+        lblDescrition.text = data.overview
+    }
 }
