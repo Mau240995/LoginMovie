@@ -10,6 +10,9 @@ import UIKit
 class MoviesViewController: UIViewController {
 
     @IBOutlet weak var collectionViewMovies: UICollectionView!
+    
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
     var context = CIContext(options: nil)
     var dataList = [Result]()
     
@@ -37,8 +40,23 @@ class MoviesViewController: UIViewController {
                }.resume()
                
            }
+    
 
-           @IBAction func btnOption(_ sender: Any) {
+    @IBAction func clikSegment(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            
+        }else if sender.selectedSegmentIndex == 1{
+            
+        }else if sender.selectedSegmentIndex == 2{
+            
+        }
+        if sender.selectedSegmentIndex == 4{
+            
+        }
+            
+        
+    }
+    @IBAction func btnOption(_ sender: Any) {
                    let alert = UIAlertController(title: "", message: "What do you want to do?", preferredStyle: .alert)
                let btnAction = UIAlertAction(title: "Perfil", style: .default, handler:    { action in
                    self.performSegue(withIdentifier: "Perfil", sender: nil)        })
@@ -51,24 +69,4 @@ class MoviesViewController: UIViewController {
                self.present(alert, animated: true, completion: nil)
            }
        }
-       extension MoviesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
-           func numberOfSections(in collectionView: UICollectionView) -> Int {
-                   return 2
-               }
-           func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-               
-               //return self.dataList = respuesta.results
-               //print(self.dataList)
-               return self.dataList.count
-           }
-           
-           func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-               
-               let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MoviesCollectionViewCell
-               
-               cell.onBind(data: dataList[indexPath.row])
-               return cell
-               
-           }
-           
-       }
+      
