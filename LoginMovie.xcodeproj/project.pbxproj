@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F74F74828ADB02D0001C7C6 /* FavoritesMoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F74F74728ADB02D0001C7C6 /* FavoritesMoviesController.swift */; };
+		5F74F74A28ADB0770001C7C6 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F74F74928ADB0770001C7C6 /* FavoritesCollectionViewCell.swift */; };
 		5FD6980C28AC0DF400965AA0 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6980B28AC0DF400965AA0 /* MoviesCollectionViewCell.swift */; };
 		5FD6980E28AC316C00965AA0 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6980D28AC316C00965AA0 /* MoviesViewController.swift */; };
 		5FD6981028AC392C00965AA0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD6980F28AC392C00965AA0 /* LoginViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F74F74728ADB02D0001C7C6 /* FavoritesMoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMoviesController.swift; sourceTree = "<group>"; };
+		5F74F74928ADB0770001C7C6 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FD6980B28AC0DF400965AA0 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		5FD6980D28AC316C00965AA0 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		5FD6980F28AC392C00965AA0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 		5F74F74528ADAD8F0001C7C6 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				5FE4D95628ABFC71004D0D29 /* Movies.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -83,8 +86,11 @@
 				5F74F74628ADADCE0001C7C6 /* Config */,
 				5FD6980F28AC392C00965AA0 /* LoginViewController.swift */,
 				5FE4D94628ABE3AD004D0D29 /* Main.storyboard */,
+				5F74F74928ADB0770001C7C6 /* FavoritesCollectionViewCell.swift */,
 				5FE4D94928ABE3AD004D0D29 /* Assets.xcassets */,
+				5F74F74728ADB02D0001C7C6 /* FavoritesMoviesController.swift */,
 				5FE4D94B28ABE3AD004D0D29 /* LaunchScreen.storyboard */,
+				5FE4D95628ABFC71004D0D29 /* Movies.swift */,
 				5FE4D94E28ABE3AD004D0D29 /* Info.plist */,
 				5FD6980D28AC316C00965AA0 /* MoviesViewController.swift */,
 				5FD6980B28AC0DF400965AA0 /* MoviesCollectionViewCell.swift */,
@@ -165,6 +171,8 @@
 			files = (
 				5FD6981028AC392C00965AA0 /* LoginViewController.swift in Sources */,
 				5FE4D95728ABFC71004D0D29 /* Movies.swift in Sources */,
+				5F74F74A28ADB0770001C7C6 /* FavoritesCollectionViewCell.swift in Sources */,
+				5F74F74828ADB02D0001C7C6 /* FavoritesMoviesController.swift in Sources */,
 				5FD6980C28AC0DF400965AA0 /* MoviesCollectionViewCell.swift in Sources */,
 				5FE4D94128ABE3AD004D0D29 /* AppDelegate.swift in Sources */,
 				5FD6980E28AC316C00965AA0 /* MoviesViewController.swift in Sources */,
