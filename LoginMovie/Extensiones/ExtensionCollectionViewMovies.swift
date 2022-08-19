@@ -8,15 +8,15 @@
 import UIKit
 extension MoviesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "DetalleMovieViewController") as! DetalleMovieViewController
+    /*func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleMovieViewController
             
             vc.names = dataList[indexPath.row].title
             vc.popular = dataList[indexPath.row].popularity
             vc.descripcion = dataList[indexPath.row].overview
 
             self.navigationController?.pushViewController(vc, animated: true)
-        }
+        }*/
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
               

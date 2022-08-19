@@ -24,13 +24,6 @@ class DetalleMovieViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblName.text = names
-        lblPopular.text = "\(popular!)"
-        lblDescription.text = descripcion
-
-        
-        
-        
     }
     
 

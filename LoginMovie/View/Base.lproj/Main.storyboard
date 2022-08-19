@@ -181,9 +181,14 @@
                                             <outlet property="lblDescription" destination="WhM-dU-Gtp" id="6S1-aj-3l2"/>
                                             <outlet property="lblName" destination="6x8-XF-78y" id="yi2-WI-1vf"/>
                                             <outlet property="lblQualification" destination="OSZ-XJ-Bx6" id="5cz-N6-e2L"/>
+                                            <segue destination="Fcz-CG-Zn2" kind="show" identifier="Detalle" id="Xzx-Lb-EU8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NjF-1b-ccl" id="Obr-gJ-lOy"/>
+                                    <outlet property="delegate" destination="NjF-1b-ccl" id="a1g-F4-czg"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pMm-3s-qlB"/>
@@ -213,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7c-az-51A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="523"/>
+            <point key="canvasLocation" x="1133" y="581"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="GpP-tP-bSo">
