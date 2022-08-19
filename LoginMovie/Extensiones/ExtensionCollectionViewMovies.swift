@@ -7,22 +7,17 @@
 
 import UIKit
 extension MoviesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetalleMovieViewController") as! DetalleMovieViewController
-        
-        vc.names = dataList[indexPath.row].title
-        vc.popular = dataList[indexPath.row].popularity
-        vc.descrp = dataList[indexPath.row].overview
-        vc.dates = dataList[indexPath.row].releaseDate
-        vc.voteAverage = dataList[indexPath.row].voteAverage
-        vc.voteCounts = dataList[indexPath.row].voteCount
-        vc.imagenP = dataList[indexPath.row].posterPath
-
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DetalleMovieViewController") as! DetalleMovieViewController
+            
+            vc.names = dataList[indexPath.row].title
+            vc.popular = dataList[indexPath.row].popularity
+            vc.descripcion = dataList[indexPath.row].overview
+
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
               
               //return self.dataList = respuesta.results
