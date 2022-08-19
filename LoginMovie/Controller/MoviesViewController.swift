@@ -14,7 +14,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
     var context = CIContext(options: nil)
-    var dataList = [Movie]()
+    var dataList = [Result]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,14 @@ class MoviesViewController: UIViewController {
 
         self.collectionViewMovies.dataSource = self
         
-        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/550?api_key=fe5be6981bdac788c33aed9787297f35")!)){
+        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/upcoming?api_key=c7f7d1dc5a6aa58fd2f3602748ad9c64&language=en-US&page=1")!)){
             (data,req,error) in
             do{
                
-                let respuesta = try JSONDecoder().decode(Movie.self, from: data!)
+                let respuesta = try JSONDecoder().decode(Movies.self, from: data!)
                 DispatchQueue.main.async {
                     //print("hhh \(respuesta.results)")
-                    self.dataList = respuesta.belongsToCollection!
+                    self.dataList = respuesta.results!
                   
                     self.collectionViewMovies.reloadData()
                     

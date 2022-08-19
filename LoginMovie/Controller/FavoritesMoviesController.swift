@@ -26,7 +26,7 @@ class FavoritesMoviesController: UIViewController {
                 let respuestaF = try JSONDecoder().decode(Movies.self, from: data!)
                 DispatchQueue.main.async {
                     
-                    self.dataListF = respuestaF.results
+                    self.dataListF = respuestaF.results!
                   
                 self.collectionViewMoviesFavorite.reloadData()
                     

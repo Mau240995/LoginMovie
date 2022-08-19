@@ -4,13 +4,14 @@
 //
 //  Created by user216116 on 16/08/22.
 //
-
 import Foundation
+
+// MARK: - Welcome
 struct Movies: Codable {
-    let dates: Dates
-    let page: Int
-    let results: [Result]
-    let totalPages, totalResults: Int
+    var dates: Dates?
+    var page: Int?
+    var results: [Result]?
+    var totalPages, totalResults: Int?
 
     enum CodingKeys: String, CodingKey {
         case dates, page, results
@@ -58,5 +59,5 @@ enum OriginalLanguage: String, Codable {
     case en = "en"
     case fr = "fr"
     case ja = "ja"
+    case ko = "ko"
 }
-
