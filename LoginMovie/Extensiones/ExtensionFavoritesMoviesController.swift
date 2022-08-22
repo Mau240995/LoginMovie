@@ -14,7 +14,7 @@ extension FavoritesMoviesController: UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         //return self.dataList = respuesta.results
-        print("datos Faboritos \(self.dataListF) ")
+        //print("datos Faboritos \(self.dataListF) ")
         return self.dataListF.count
     }
     
